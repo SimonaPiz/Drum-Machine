@@ -44,7 +44,16 @@ Build an app that is functionally similar to this: [drum-machine.freecodecamp]( 
   
 3. ⚙ Implemented project features:
 
-   ### [☑issue #1]()
+   ### [☑issue #1](https://github.com/SimonaPiz/Drum-Machine/issues/1) Create React Elements
+
+   ![React Components](https://github.com/SimonaPiz/Drum-Machine/assets/91121660/ec4a53a7-05ff-4056-a583-fcfabe3c7076)
+
+- [ ] 🟧 Main component `id="drum-machine"`
+  - [ ] 🟩 pads container
+    - [ ] 🟦  9 clickable drum `.drum-pad` elements, , each with a unique id that describes the audio clip the drum pad will be set up to trigger, and an inner text that corresponds to one of the following keys on the keyboard: Q, W, E, A, S, D, Z, X, C. The drum pads MUST be in this order.
+  - [ ] 🟥 element `id="display"`
+      
+
 
    
       

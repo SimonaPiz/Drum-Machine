@@ -51,6 +51,7 @@ Build an app that is functionally similar to this: [drum-machine.freecodecamp]( 
   - [ ] 🟧 Main component `id="drum-machine"`
     - [ ] 🟩 pads container
       - [ ] 🟦  9 clickable drum `.drum-pad` elements, , each with a unique id that describes the audio clip the drum pad will be set up to trigger, and an inner text that corresponds to one of the following keys on the keyboard: Q, W, E, A, S, D, Z, X, C. The drum pads MUST be in this order.
+      - [ ] Within each `.drum-pad`, there should be an HTML5 `audio` element which has a `src` attribute pointing to an audio clip, a class name of `clip`, and an id corresponding to the inner text of its parent `.drum-pad` (e.g. `id="Q"`, `id="W"`, `id="E"` etc.).
     - [ ] 🟥 element `id="display"`
       
 

@@ -1,4 +1,5 @@
 import { Display } from "./Components/Display/Display";
+import { DrumPad } from "./Components/DrumPad/DrumPad";
 
 function App() {
   return (
@@ -7,7 +8,11 @@ function App() {
         Drum Machine 
         <i class="fa-solid fa-drum icon"></i>
       </h1>
-      <div id="pads-container"></div>
+      <div id="pads-container">
+        <DrumPad />
+        <DrumPad />
+        <DrumPad />
+      </div>
       <Display />
     </div>
   );

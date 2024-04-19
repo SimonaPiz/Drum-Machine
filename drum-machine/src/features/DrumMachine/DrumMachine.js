@@ -1,8 +1,12 @@
+import { useSelector } from "react-redux";
 import { Display } from "../../Components/Display/Display";
 import { DrumPad } from "../../Components/DrumPad/DrumPad";
 
 
 export function DrumMachine ({drums}) {
+  const displayText = useSelector((state) => state.drumMachine.displayText);
+
+
   return (
     <div id="drum-machine">
       <h1>
@@ -19,7 +23,7 @@ export function DrumMachine ({drums}) {
           />)
         }
       </div>
-      <Display text='display' />
+      <Display text={displayText} />
     </div>
   );
 }

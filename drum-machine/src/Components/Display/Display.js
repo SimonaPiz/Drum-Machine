@@ -1,7 +1,7 @@
 import './display.css';
 
-export function Display() {
+export function Display({text}) {
   return (
-    <p id="display">display</p>
+    <p id="display">{text}</p>
   )
 }

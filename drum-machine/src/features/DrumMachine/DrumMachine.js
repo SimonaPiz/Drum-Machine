@@ -1,11 +1,15 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Display } from "../../Components/Display/Display";
 import { DrumPad } from "../../Components/DrumPad/DrumPad";
-
+import { setDisplayText } from "./drumMachineSlice";
 
 export function DrumMachine ({drums}) {
   const displayText = useSelector((state) => state.drumMachine.displayText);
+  const dispatch = useDispatch();
 
+  const clickHandler = (name) => {
+    dispatch(setDisplayText(name));
+  }
 
   return (
     <div id="drum-machine">
@@ -20,6 +24,7 @@ export function DrumMachine ({drums}) {
             char={drum.char}
             name={drum.name}
             src={drum.src}
+            clickHandler={clickHandler}
           />)
         }
       </div>

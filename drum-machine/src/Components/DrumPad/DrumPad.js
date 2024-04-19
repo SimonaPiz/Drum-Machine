@@ -1,11 +1,11 @@
 import './drumPad.css';
 
-export function DrumPad({id, name, char, src}) {
+export function DrumPad({id, name, char, src, clickHandler}) {
   return (
     <button 
       className="drum-pad" 
       id={id}
-      onClick=''
+      onClick={() => clickHandler(name)}
     >
       {char}
       <audio 

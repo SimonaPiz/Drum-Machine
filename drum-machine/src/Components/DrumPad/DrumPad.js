@@ -12,7 +12,6 @@ export function DrumPad({id, name, char, src, clickHandler}) {
         className='clip' 
         src={src}
         id={char}
-        onKeyDown=''
       ></audio>
     </button>
   )

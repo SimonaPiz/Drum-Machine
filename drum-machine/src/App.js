@@ -1,11 +1,12 @@
+import { DrumMachine } from "./features/DrumMachine/DrumMachine";
+import { Provider } from "react-redux";
+import { store } from './store';
+
 function App() {
   return (
-    <div className="App">
-      <h1>
-        Drum Machine 
-        <i class="fa-solid fa-drum icon"></i>
-      </h1>
-    </div>
+    <Provider store={store} >
+      <DrumMachine />
+    </Provider>
   );
 }
 

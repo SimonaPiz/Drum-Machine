@@ -16,7 +16,8 @@ h1 {
 }
 
 #drum-machine {
-  max-width: 600px;
+  max-width: 95vh;
+  width: 600px;
   margin: 0 auto;
 }
 

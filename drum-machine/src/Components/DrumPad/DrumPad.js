@@ -5,7 +5,7 @@ export function DrumPad({id, name, char, src, clickHandler}) {
     <button 
       className="drum-pad" 
       id={id}
-      onClick={() => clickHandler(name)}
+      onClick={() => clickHandler(name, char)}
     >
       {char}
       <audio 
